@@ -12,6 +12,8 @@ public class SendRandomMail {
      */
     private int sendTime;
 
+    private boolean needChangeSender = false;
+
     /**
      * 用于测试
      */
@@ -39,5 +41,13 @@ public class SendRandomMail {
 
     public void setTestAdress(String testAdress) {
         this.testAdress = testAdress;
+    }
+
+    public boolean isNeedChangeSender() {
+        return needChangeSender;
+    }
+
+    public void setNeedChangeSender(boolean needChangeSender) {
+        this.needChangeSender = needChangeSender;
     }
 }

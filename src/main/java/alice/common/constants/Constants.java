@@ -20,7 +20,14 @@ public final class Constants {
     public static final String TESTCASE_TYPE_UI = "UI";
     public static final String TESTCASE_TYPE_UT = "UT";
 
+    /**
+     * 有效数据
+     */
     public static final int DB_DATA_ACTIVE = 1;
+    /**
+     * 无效数据
+     */
+    public static final int DB_DATA_INVALID = 0;
 
     public static final String XXD = "XXD";
 

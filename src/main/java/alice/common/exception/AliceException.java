@@ -15,6 +15,10 @@ public class AliceException extends Exception {
         super(e);
     }
 
+    public AliceException(String info){
+        super(info);
+    }
+
     public AliceException(int code, String info){
         this.errorCode = code;
         this.info = info;

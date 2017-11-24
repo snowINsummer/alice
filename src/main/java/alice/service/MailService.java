@@ -8,4 +8,5 @@ public interface MailService {
 
     void sendSpecificEmail() throws AliceException;
 
+    void test() throws AliceException;
 }

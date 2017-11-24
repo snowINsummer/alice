@@ -66,4 +66,24 @@ public class MailController {
         return rspData;
     }
 
+
+    /**
+     * 根据客户表发送邮件
+     * @return
+     */
+    @RequestMapping(value = "/test", method = RequestMethod.POST)
+    public RspData test(){
+        RspData rspData = new RspData();
+        try {
+            mailService.test();
+            rspData.setCode(11111);
+            rspData.setMessage("test");
+//        }catch (AliceException e){
+//            rspData.setCode(e.getCode());
+//            rspData.setMessage(e.getMessage());
+        }catch (Exception e){
+            rspData.setMessage(e.getMessage());
+        }
+        return rspData;
+    }
 }
